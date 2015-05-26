@@ -1,0 +1,22 @@
+{% extends "blogtemplate.html" %}
+{% block content %}
+{{error}}
+<div align="center">
+	<form method="post">
+		<div>
+			<label>
+				<h3 align="left">Subject</h3>
+				<input type="text" name="subject" size="81" value={{title}}>
+			</label>
+		</div>
+		<br>
+		<div>
+			<label>
+				<h3 align="left">Content</h3>
+				<div><textarea name="content" rows="15" cols="80" value={{body}}></textarea></div>
+			</label>
+		</div>
+		<div><input type="submit"></div>
+	</form>
+</div>
+{% endblock %}

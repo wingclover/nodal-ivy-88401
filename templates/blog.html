@@ -1,0 +1,14 @@
+{% extends "blogtemplate.html" %}
+{% block content %}
+
+{% for blog in blogs %}
+<div>
+	<div style="position:relative">
+		<br>	
+		<div><h3><a href="/blog/{{blog.key().id()}}">{{blog.title}}</a></h3></div>
+		<div style="position:absolute;right:0px;bottom:0px;">{{blog.created.strftime("%x  %X")}}</div>
+	</div>
+	<div><pre>{{blog.body}}</pre></div>
+</div>
+{% endfor %}
+{% endblock %}

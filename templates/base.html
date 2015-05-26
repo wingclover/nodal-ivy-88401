@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<title>Ying's World</title>
+    <style>
+		body > .content {
+			height:auto;
+			min-height:100%;
+		}
+
+		html, body, .content {
+			height: 100%;
+		}
+
+		.list {
+			margin-left: 100px;
+		}
+
+		.box {
+			padding:15px;
+		}
+
+		p {
+			font-family: Arial;
+			font-size: 18px;
+			margin-left:50px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		.title {
+			padding-bottom: 30px;
+		}
+
+		.nav {
+			background-color:#B4FAEB;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.nav li{
+			display:inline;
+			padding: 10px;
+		}
+
+		li {
+			font-size: 18px;
+		}
+
+		.jumbotron {
+			background-image:url('https://dl.dropboxusercontent.com/u/18456730/P4231103.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 800px;
+			width: 100%;
+			text-color: white;
+	
+		}
+
+		#yingwang {
+			color: black;
+		}
+
+		.thumbnail {
+		    float: left;
+		    width: 32%;
+		    height: 30%;
+		    margin: 5px;
+		}
+
+		.widethumbnail {
+		    float: left;
+		    width: 50%;
+		    height: 30%;
+		    margin: 5px;
+		}
+
+		.center {
+			clear: both;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.content {
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 50px;
+		}
+
+		.center_piece {
+			width: 900px;
+			padding: 100px;
+			background-color: #CEFFF6;
+			box-shadow: 10px 10px 5px #888888 ;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 50px;
+		}
+		#search {
+			margin-left: 800px;
+		}
+
+		.inline_list li {
+			display:inline;
+			padding:5px;
+			background:white;
+		}
+
+		#footer {
+			position:relative;
+			clear:both;
+			background-color:#B4FAEB;
+			margin-top:-50px;
+			height:50px;
+			width: 100%;
+		}
+
+		#footer li{
+			display:inline;
+			padding-top: 10px;
+		}
+
+		#filler {
+			height:30px;
+		}
+
+		#clickme {
+			height: 100px;
+			padding: 10px;
+		}
+
+		#kitty {
+			width:98px;
+			margin-left: auto;
+			margin-right: auto;
+			border:5px solid #B4FAEB;
+		}
+    </style>
+</head>
+
+<body>
+	<div id="filler">
+		<div id="kitty">
+			<img class="center" src= "https://dl.dropboxusercontent.com/u/18456730/kitty.jpg" alt="Smiley face" height="100">
+		</div>
+	</div>
+	<div class = "nav">
+		<div>
+			<ul class="pull-left">
+				<li><a href = "/">Home</a></li>
+				<li><a href = "/about">About Me</a></li>
+				<li><a href = "/projects">Projects</a></li>
+				<li><a href = "/gallery">Gallery</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<ul class="pull-right">
+				<li><a href = "/activity">Changelog</a></li>
+				<li><a href = "/blog">Blog</a></li>
+				<li><a href = "/contact">Contact</a></li>
+			</ul>
+		</div>
+		<div id="search">
+			<form action="http://google.com/search" method="get">
+				<input type="hidden" name="sitesearch" value="http://nodal-ivy-88401.appspot.com/">
+				<input name="q">
+				<input type="submit" value="search site">
+			</form>
+		</div>
+
+	</div>
+ 	<main class="content">
+			{% block content %}
+			{% endblock %}
+	</main>
+
+	<div id = "footer">
+		<div>
+			<ul class="pull-left">
+				<li>
+					<a href="mailto:ywang.botany@gmail.com?Subject=Hello">Email: ywang.botany@gmail.com</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="pull-right">
+				<li>
+					<a href = "http://www.linkedin.com/in/wingclover">Linkedin: http://www.linkedin.com/in/wingclover</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+
+</html>
